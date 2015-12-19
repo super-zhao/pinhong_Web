@@ -1,0 +1,124 @@
+A.jd100:link {
+	COLOR: #000000;
+	TEXT-DECORATION: none;
+   	font-size: 12px;
+	line-height: 18px;	
+}
+A.jd100:visited {
+   color: #000000; TEXT-DECORATION: none;
+   	font-size: 12px;
+	line-height: 18px;
+}
+A.jd100:active {
+	COLOR: #000000;
+	TEXT-DECORATION: none;
+	font-size: 12px;
+	line-height: 18px;
+}
+A.jd100:hover {
+	COLOR: #ff0000; TEXT-DECORATION: underline;
+	font-size: 13px;
+	line-height: 18px;}
+
+A:link {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #FF0000; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+
+body {
+	background-color: #ffffff;
+}
+	
+.unnamed1 {
+	font-size: 12px;
+	line-height: 18px;
+	text-decoration: none;
+}
+form {margin-bottom:0;margin-top:0}
+.style1 {
+	color: #990000;
+	font-weight: bold;
+}
+.unnamed2 {
+	font-size: 14px;
+	line-height: 22px;
+}
+
+.jd_tab {
+border: 1px solid #85ACE0;
+  }
+.jd_title {
+	font-size: 12px;
+	line-height: 18px;
+	text-decoration: none;
+    background-color: #FFE8E8;
+
+  }
+.jd_title2 {
+	font-size: 12px;
+	line-height: 18px;
+	text-decoration: none;
+    background-color: #FF0000;
+  }
+
+    .jd_titlemu {
+	font-size: 12px;
+	line-height: 18px;
+	text-decoration: none;
+    background-color: #FEEDE0;
+    height:22px; background:url("title.gif");
+  }
+
+A.jdmenu:link {
+	COLOR: #000000;
+	TEXT-DECORATION: none;
+   	font-size: 12px;
+	line-height: 18px;	
+}
+A.jdmenu:visited {
+   color: #000000; TEXT-DECORATION: none;
+   	font-size: 12px;
+	line-height: 18px;
+}
+A.jdmenu:hover {
+	COLOR: #FF0000; TEXT-DECORATION: underline;
+	font-size: 12px;
+	line-height: 18px;}
+.unnamed3 {
+	font-size: 12px;
+	line-height: 18px;
+	text-decoration: none;
+    color: #333333;
+}
+.stymem{
+PADDING-RIGHT: 1px; 
+PADDING-LEFT: 1px; FILTER: glow(color=#0066FF,strength=3);
+PADDING-BOTTOM: 1px; 
+COLOR: white; 
+PADDING-TOP: 1px; 
+HEIGHT: 10px;
+}
+.styvip{
+PADDING-RIGHT: 1px; 
+PADDING-LEFT: 1px; FILTER: glow(color=#ff6600,strength=3);
+PADDING-BOTTOM: 1px; 
+COLOR: white; 
+PADDING-TOP: 1px; 
+HEIGHT: 10px;
+}
+.styadm{
+PADDING-RIGHT: 1px; 
+PADDING-LEFT: 1px; FILTER: glow(color=#ff0000,strength=3);
+PADDING-BOTTOM: 1px; 
+COLOR: white; 
+PADDING-TOP: 1px; 
+HEIGHT: 10px;
+}
+
+.jd_tx1{height: 16px; font-size: 9pt; border: 1px solid; border-color:#716F64; color:#FF0000;}
+.jd_bt1{border-left:1px solid #C0C0C0; border-top:1px solid #C0C0C0; font-size: 9pt; border-right-width: 1; border-bottom-width: 1; height: 16px;background-color: #EEEEEE; cursor: hand; border-right-style:solid; border-bottom-style:solid}

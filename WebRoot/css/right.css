@@ -1,0 +1,48 @@
+BODY {
+	FONT-SIZE: 12px; COLOR: #666666; LINE-HEIGHT: 130%
+}
+TD {
+	FONT-SIZE: 12px; COLOR: #666666; LINE-HEIGHT: 130%
+}
+A {
+	FONT-SIZE: 12px; COLOR: #666666; LINE-HEIGHT: 130%
+}
+P {
+	FONT-SIZE: 12px; COLOR: #666666; LINE-HEIGHT: 130%
+}
+.nav {
+	FONT-SIZE: 12px; COLOR: #666666
+}
+.table {
+	
+}
+.title {
+	FONT-SIZE: 12px; BACKGROUND: #f0f0f0; COLOR: #666666
+}
+.con {
+	FONT-SIZE: 12px; BACKGROUND: #ffffff; COLOR: #666666
+}
+.pages {
+	FONT-SIZE: 12px; COLOR: #666666
+}
+.input {
+	BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 12px; BACKGROUND: #f5f5f5; PADDING-BOTTOM: 2px; BORDER-LEFT: #cccccc 1px solid; COLOR: #666666; PADDING-TOP: 2px; BORDER-BOTTOM: #cccccc 1px solid
+}
+.button {
+	BORDER-RIGHT: #666666 2px solid; BORDER-TOP: #666666 1px solid; FONT-SIZE: 12px; BACKGROUND: #eeeeee; BORDER-LEFT: #666666 1px solid; COLOR: #666666; BORDER-BOTTOM: #666666 2px solid; HEIGHT: 18px
+}
+SELECT {
+	FONT-SIZE: 12px
+}
+A:link {
+	TEXT-DECORATION: none
+}
+A:visited {
+	TEXT-DECORATION: none
+}
+A:active {
+	TEXT-DECORATION: none
+}
+A:hover {
+	TEXT-DECORATION: none
+}

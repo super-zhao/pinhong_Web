@@ -1,0 +1,51 @@
+﻿<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<%
+	String userName = request.getParameter("userName");
+	String password = request.getParameter("password");
+	String param = request.getParameter("param");//??è?param2?êy￡?ó?ò??D??ó??§2ù×÷ê?×￠2á?1ê?μ???
+
+	UserDao userDao = new UserDao();
+	//?D??ó??§ê?è?D??￠ê?·??a??
+	if (param == null || userName == null || password == null) {
+		response.sendRedirect("register.jsp");
+	} else if (param != null && "login".equals(param)) {  //μ???2ù×÷
+		//?ù?Yó??§??oí?ü??2é?ˉêy?Y?a
+		Users user = userDao.findUsers(userName, password);
+		if (user != null) {		//?D??μ±?°ó??§ê?·?′??ú	
+			//è?1?ó??§′??ú￡?°?μ±?°ó??§??±￡′?μ?application?Dμ?List?ˉo??ú
+			List userList = (List) application.getAttribute("users");
+			if (userList == null || userList.size() == 0) {  //????μúò???μ???ó??§μ?2ù×÷
+				userList = new ArrayList();
+				userList.add(userName);
+			} else {   //????????ó??§μ?2ù×÷
+				boolean bool = true;
+				for (int i = 0; i < userList.size(); i++) {
+		
+					if (userName.equals(userList.get(i).toString())) {
+						bool = false;
+						break;
+					}
+				}
+				if (bool)
+					userList.add(userName);
+			}
+			//°?μ±?°ó??§μ?D??￠±￡′?μ?session?D
+			session.setAttribute("user", user);
+			application.setAttribute("users", userList);
+			response.sendRedirect("main.jsp");
+		} else{   //è?1?ó??§2?′??ú￡???3?ìáê?oó￡?·μ??μ?í???ê×ò3
+			//response.sendRedirect("register.jsp");
+			out
+			.print("<script type='text/javascript'>alert('ó??§???ò?ü??′í?ó￡?????D?μ????￡');location.replace('index.jsp');</script>");
+		}
+	} else {  //×￠2á2ù×÷
+		int count = userDao.insertUser(userName, password,0);
+		if (count > 0) {
+			out
+			.print("<script type='text/javascript'>alert('×￠2á3é1|￡???μ????￡');location.replace('index.jsp');</script>");
+		} else {
+			out
+			.print("<script type='text/javascript'>alert('×￠2áê§°ü￡?????D?×￠2á?￡');history.go(-1);</script>");
+		}
+	}
+%>

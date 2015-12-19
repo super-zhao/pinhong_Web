@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0"
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+     
+     <!-- 赵超==== -->
+     
+     
+     <!-- 控制字符编码的拦截器 -->
+     <filter>
+		<filter-name>encoding</filter-name>
+		<filter-class>com.team5.zhaochao.filter.Encoding</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>encoding</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+<!-- 	判断是否登录的拦截器 --> 
+  <filter>
+		<filter-name>adminLogined</filter-name>
+		<filter-class>com.team5.zhaochao.filter.AdminLogined</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>adminLogined</filter-name>
+		<url-pattern>/admin/index.jsp</url-pattern>
+	</filter-mapping>
+  
+  
+  
+  <servlet>
+    <servlet-name>AdminServlet</servlet-name>
+    <servlet-class>com.team5.zhaochao.servlet.AdminServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UserServlet</servlet-name>
+    <servlet-class>com.team5.zhaochao.servlet.UserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ProServlet</servlet-name>
+    <servlet-class>com.team5.zhaochao.servlet.ProServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>NewsServlet</servlet-name>
+    <servlet-class>com.team5.zhaochao.servlet.NewsServlet</servlet-class>
+  </servlet>
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>AdminServlet</servlet-name>
+    <url-pattern>/zcAdminServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserServlet</servlet-name>
+    <url-pattern>/zcUserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ProServlet</servlet-name>
+    <url-pattern>/zcProServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NewsServlet</servlet-name>
+    <url-pattern>/zcNewsServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <!-- 刘巍 -->
+  <servlet>
+    <servlet-name>InitIndex_LW</servlet-name>
+    <servlet-class>com.team5.liuwei.servlet.InitIndex_LW</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowNewsList_LW</servlet-name>
+    <servlet-class>com.team5.liuwei.servlet.ShowNewsList_LW</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DetailNews_LW</servlet-name>
+    <servlet-class>com.team5.liuwei.servlet.DetailNews_LW</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowProductList_LW</servlet-name>
+    <servlet-class>com.team5.liuwei.servlet.ShowProductList_LW</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DetailProduct_LW</servlet-name>
+    <servlet-class>com.team5.liuwei.servlet.DetailProduct_LW</servlet-class>
+  </servlet>
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>InitIndex_LW</servlet-name>
+    <url-pattern>/initindex_lw</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowNewsList_LW</servlet-name>
+    <url-pattern>/shownewslist_lw</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DetailNews_LW</servlet-name>
+    <url-pattern>/detailnews_lw</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowProductList_LW</servlet-name>
+    <url-pattern>/showproductlist_lw</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DetailProduct_LW</servlet-name>
+    <url-pattern>/detailproduct_lw</url-pattern>
+  </servlet-mapping>
+
+
+
+	<!-- 胡锐 -->
+	<filter>
+      <filter-name>IndexFilter</filter-name>
+      <filter-class>com.team5.hurui.filter.IndexFilter</filter-class>
+  </filter>
+  <filter-mapping>
+      <filter-name>IndexFilter</filter-name>
+      <url-pattern>/messageBoard.jsp</url-pattern>
+  </filter-mapping>
+  
+  <filter>
+      <filter-name>LoginUser</filter-name>
+      <filter-class>com.team5.hurui.filter.LoginUser</filter-class>
+  </filter>
+  <filter-mapping>
+      <filter-name>LoginUser</filter-name>
+      <url-pattern>/chat/main.jsp</url-pattern>
+      <url-pattern>/chat/left.jsp</url-pattern>
+      <url-pattern>/chat/message.jsp</url-pattern>
+      <url-pattern>/chat/userList.jsp</url-pattern>
+      <url-pattern>/chat/sendMessage.jsp</url-pattern>
+  </filter-mapping>
+  
+  
+  <servlet>
+    <servlet-name>login</servlet-name>
+    <servlet-class>com.team5.hurui.servlet.login</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Checklogin</servlet-name>
+    <servlet-class>com.team5.hurui.servlet.Checklogin</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Zhuce</servlet-name>
+    <servlet-class>com.team5.hurui.servlet.Zhuce</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>sendchar</servlet-name>
+    <servlet-class>com.team5.hurui.servlet.sendchar</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Messageadd</servlet-name>
+    <servlet-class>com.team5.hurui.servlet.Messageadd</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Dopeall</servlet-name>
+    <servlet-class>com.team5.hurui.servlet.Dopeall</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Rever</servlet-name>
+    <servlet-class>com.team5.hurui.servlet.Rever</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Replyadd</servlet-name>
+    <servlet-class>com.team5.hurui.servlet.Replyadd</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>login</servlet-name>
+    <url-pattern>/hurui/login</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Checklogin</servlet-name>
+    <url-pattern>/hurui/Checklogin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Zhuce</servlet-name>
+    <url-pattern>/hurui/Zhuce</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>sendchar</servlet-name>
+    <url-pattern>/hurui/sendchar</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Messageadd</servlet-name>
+    <url-pattern>/hurui/Messageadd</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Dopeall</servlet-name>
+    <url-pattern>/hurui/Dopeall</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Rever</servlet-name>
+    <url-pattern>/hurui/Rever</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Replyadd</servlet-name>
+    <url-pattern>/hurui/Replyadd</url-pattern>
+  </servlet-mapping>
+
+
+
+
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list> 
+
+
+	
+</web-app>

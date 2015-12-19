@@ -1,0 +1,27 @@
+td {
+	font-size: 12px;
+	line-height: 150%;
+	color: #000000;
+}
+body {
+	FONT-SIZE: 12px;COLOR: #000000; FONT-FAMILY: "ËÎÌו"; background-color:#D6E0EF
+}
+a {
+	color: #0044DD;
+	text-decoration: none;
+}
+a:hover {
+	color: #FF3300;
+	text-decoration: underline;
+}
+a:visited {
+	color: #0044DD;
+	text-decoration: none;
+}
+input,select,textarea	{ color: #000000; font-weight: normal; font-style:normal; font-variant:normal; font-size:9pt; font-family:Tahoma, Verdana }
+select			{ font: 9pt Tahoma, Verdana; color: #000000; font-weight: normal; background-color: #F8F8F8 }
+.header			{ font: 12px Tahoma, Verdana; color: #FFFFFF; font-weight: bold; background-color: #698CC3 }
+.tableborder	{ background: #D6E0EF; border: 1px solid #698CC3 } 
+.altbg1		    { background: #EFEFEF;  }
+.altbg2		    { background: #FFFFFF }
+.shadow {  filter: Shadow(Color=#cccccc, Direction=-60)}
